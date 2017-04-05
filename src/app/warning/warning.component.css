@@ -1,0 +1,10 @@
+div.warning {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 100px;
+  background-color: gold;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
