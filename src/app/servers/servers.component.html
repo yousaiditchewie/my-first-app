@@ -7,7 +7,7 @@
   type="text"
   class="form-control"
   [(ngModel)]="serverName">
-<p>{{ serverName }}</p>
+<!-- <p>{{ serverName }}</p> -->
 <button
  class="btn btn-success"
  [disabled]="!allowNewServer"
@@ -16,3 +16,20 @@
  <!-- <p [innerText]="allowNewServer"></p> -->
 <app-server></app-server>
 <app-server></app-server>
+<hr>
+<h3>1. Add an input field which updates a property ('username') via two-way binding.</h3>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName">
+<hr>
+<h3>2. Output the username property via String Interpolation (in a paragraph below the input).</h3>
+<p>{{ userName }}</p>
+<hr>
+<h3>3. Add a button which may only be clicked if the username is NOT an empty string.</h3>
+<button
+  class="btn btn-primary"
+  [disabled]="!userName"
+  (click)="resetUserName()">Reset Username</button>
+<hr>
+<h3>4. Upon clicking the button, the username should be reset to an empty string.</h3>
